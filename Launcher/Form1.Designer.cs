@@ -30,42 +30,43 @@ namespace Launcher
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Launcher));
-			this.PlayButton = new System.Windows.Forms.Button();
-			this.VersionSubmitText = new System.Windows.Forms.TextBox();
+			this.MainButton = new System.Windows.Forms.Button();
+			this.VersionDropdown = new System.Windows.Forms.ComboBox();
 			this.SuspendLayout();
 			// 
-			// PlayButton
+			// MainButton
 			// 
-			this.PlayButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.PlayButton.BackColor = System.Drawing.Color.White;
-			this.PlayButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-			this.PlayButton.Location = new System.Drawing.Point(398, 595);
-			this.PlayButton.Name = "PlayButton";
-			this.PlayButton.Size = new System.Drawing.Size(270, 75);
-			this.PlayButton.TabIndex = 0;
-			this.PlayButton.Text = "Check for updates";
-			this.PlayButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-			this.PlayButton.UseVisualStyleBackColor = false;
-			this.PlayButton.Click += new System.EventHandler(this.button1_Click);
+			this.MainButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.MainButton.BackColor = System.Drawing.Color.White;
+			this.MainButton.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.MainButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+			this.MainButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+			this.MainButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.MainButton.Font = new System.Drawing.Font("Consolas", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+			this.MainButton.Location = new System.Drawing.Point(736, 567);
+			this.MainButton.Name = "MainButton";
+			this.MainButton.Size = new System.Drawing.Size(316, 102);
+			this.MainButton.TabIndex = 0;
+			this.MainButton.Text = "Download";
+			this.MainButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+			this.MainButton.UseVisualStyleBackColor = false;
+			this.MainButton.Click += new System.EventHandler(this.MainButton_Click);
 			// 
-			// VersionSubmitText
+			// VersionDropdown
 			// 
-			this.VersionSubmitText.AllowDrop = true;
-			this.VersionSubmitText.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-			this.VersionSubmitText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.VersionSubmitText.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-			this.VersionSubmitText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-			this.VersionSubmitText.HideSelection = false;
-			this.VersionSubmitText.Location = new System.Drawing.Point(923, 625);
-			this.VersionSubmitText.Margin = new System.Windows.Forms.Padding(0, 16, 0, 16);
-			this.VersionSubmitText.MaximumSize = new System.Drawing.Size(256, 64);
-			this.VersionSubmitText.MaxLength = 7;
-			this.VersionSubmitText.Name = "VersionSubmitText";
-			this.VersionSubmitText.Size = new System.Drawing.Size(128, 22);
-			this.VersionSubmitText.TabIndex = 2;
-			this.VersionSubmitText.Text = ":)";
-			this.VersionSubmitText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.VersionSubmitText.WordWrap = false;
+			this.VersionDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+			this.VersionDropdown.Cursor = System.Windows.Forms.Cursors.Default;
+			this.VersionDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.VersionDropdown.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+			this.VersionDropdown.IntegralHeight = false;
+			this.VersionDropdown.ItemHeight = 33;
+			this.VersionDropdown.Location = new System.Drawing.Point(12, 598);
+			this.VersionDropdown.MaximumSize = new System.Drawing.Size(316, 0);
+			this.VersionDropdown.MinimumSize = new System.Drawing.Size(316, 0);
+			this.VersionDropdown.Name = "VersionDropdown";
+			this.VersionDropdown.Size = new System.Drawing.Size(316, 41);
+			this.VersionDropdown.TabIndex = 1;
+			this.VersionDropdown.SelectedIndexChanged += new System.EventHandler(this.VersionDropdown_SelectedIndexChanged);
 			// 
 			// Launcher
 			// 
@@ -73,8 +74,8 @@ namespace Launcher
 			this.BackgroundImage = global::Launcher.Properties.Resources.LauncherWindowBG;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(1064, 681);
-			this.Controls.Add(this.VersionSubmitText);
-			this.Controls.Add(this.PlayButton);
+			this.Controls.Add(this.VersionDropdown);
+			this.Controls.Add(this.MainButton);
 			this.DoubleBuffered = true;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
@@ -85,14 +86,12 @@ namespace Launcher
 			this.Text = "Launcher";
 			this.Load += new System.EventHandler(this.Launcher_Load);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Button PlayButton;
-		private System.Windows.Forms.TextBox VersionSubmitText;
+		protected internal System.Windows.Forms.Button MainButton;
+		public System.Windows.Forms.ComboBox VersionDropdown;
 	}
 }
 
