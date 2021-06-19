@@ -1,0 +1,13 @@
+C:\Users\Matt\.Git\Launcher\Launcher\bin\Release\Launcher.exe.config
+C:\Users\Matt\.Git\Launcher\Launcher\bin\Release\Launcher.exe
+C:\Users\Matt\.Git\Launcher\Launcher\bin\Release\Launcher.pdb
+C:\Users\Matt\.Git\Launcher\Launcher\bin\Release\System.IO.Compression.ZipFile.dll
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.csproj.AssemblyReference.cache
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.g.resources
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.Launcher.resources
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.Properties.Resources.resources
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.csproj.GenerateResource.cache
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.csproj.CopyComplete
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.exe
+C:\Users\Matt\.Git\Launcher\Launcher\obj\Release\Launcher.pdb
